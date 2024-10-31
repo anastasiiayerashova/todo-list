@@ -46,6 +46,7 @@
   border-radius: 8px;
   border: none;
   padding: 4px;
+  cursor: pointer;
 }
 
 .delete {
