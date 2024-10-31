@@ -1,0 +1,53 @@
+.inputDiv {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+
+.item {
+  display: flex;
+  gap: 30px;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid blue;
+  box-shadow: 2px 2px 2px 2px lightblue;
+  padding: 10px 20px;
+  border-radius: 8px;
+  transition: all 0.4s ease-in-out;
+  cursor: pointer;
+  width: 500px;
+}
+
+.list {
+  display: flex;
+  gap: 20px;
+  flex-direction: column;
+  padding: 40px 20px;
+  margin: 0 auto;
+}
+
+.input {
+  width: 50%;
+  height: 30px;
+  border-radius: 8px;
+  box-shadow: 2px 2px 2px 2px lightblue;
+  border: 1px solid blue;
+  outline: none;
+  padding: 0 20px;
+  font-size: 16px;
+  width: 400px;
+}
+
+.btn,
+.delete {
+  width: 80px;
+  height: 30px;
+  background-color: lightblue;
+  border-radius: 8px;
+  border: none;
+  padding: 4px;
+}
+
+.delete {
+  background-color: lightcoral;
+}
