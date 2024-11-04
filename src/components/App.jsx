@@ -2,6 +2,57 @@ import { useState, useEffect } from 'react'
 import './App.css'
 import TodoList from './TodoList/TodoList'
 import { useId } from 'react'
+import { Formik, Form, Field, ErrorMessage } from 'formik'
+import * as Yup from 'yup'
+
+// const initialValues = {
+//     username: '',
+//   email: '',
+//   message: '',
+//     level: 'good',
+//   }
+
+// const FeedbackForm = () => {
+//   const handleSubmit = (values, actions) => {
+//     console.log(values)
+//     actions.resetForm()
+//   }
+//   const nameId = useId();
+//   const emailId = useId();
+//   const msgId = useId();
+//   const selId = useId();
+//   console.log(initialValues)
+
+// const FeedbackSchema = Yup.object().shape({
+//   username: Yup.string().min(2, "Too Short!").max(50, "Too Long!").required("Required"),
+//   email: Yup.string().email("Must be a valid email!").required("Required"),
+//   message: Yup.string().min(3, "Too short").max(256, "Too long").required("Required"),
+//   level: Yup.string().oneOf(["good", "neutral", "bad"]).required("Required")
+// });
+
+//   return (
+//     <Formik initialValues={initialValues} onSubmit={handleSubmit} validationSchema={FeedbackSchema}>
+//       <Form>
+//         <label htmlFor={nameId}>Username</label>
+//         <Field type='text' name='username' id={nameId}></Field>
+//         <ErrorMessage name='username' component='span'></ErrorMessage>
+//         <label htmlFor={emailId}>Email</label>
+//         <Field type='email' name='email' id={emailId}></Field>
+//          <ErrorMessage name='email' component='span'></ErrorMessage>
+//         <button type='submit'>Submit</button>
+//         <Field as='textarea' name='message' id={msgId} rows='5'></Field>
+//         <ErrorMessage name='message' component='span'></ErrorMessage>
+//         <label htmlFor={selId}>Select</label>
+//         <Field as='select' id={selId} name='level'>
+//           <option value="good">Option 1</option>
+// 	<option value="neutral">Option 2</option>
+// 	<option value="bad">Option 3</option>
+//         </Field>
+//         <ErrorMessage name='level' component='span'></ErrorMessage>
+//       </Form>
+//       </Formik>
+//   )
+// }
 
 const LoginForm = ({onLogin}) => {
  
@@ -56,6 +107,7 @@ const SelectBar = ({value, onSelect}) => {
 }
 
 export default function App() {
+  
 //   const [lang, setLang] = useState("ua");
 //   const handleLogin = (userData) => {
 //     console.log(userData)
@@ -98,6 +150,7 @@ export default function App() {
   
   return (
     <div className='mainDiv'>
+      {/* <FeedbackForm /> */}
       <TodoList />
        {/* <LoginForm onLogin={handleLogin} />
       <SearchBar />
